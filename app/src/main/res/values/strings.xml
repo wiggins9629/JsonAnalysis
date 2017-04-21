@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JsonAnalysis</string>
+
+    <string name="title">Json数据格式解析</string>
+    <string name="raw_data">原始数据</string>
+    <string name="parsing_data">解析数据</string>
+    <string name="data_format">JSON数据格式如下:</string>
+    <string name="data"># 第%1$s种</string>
+</resources>

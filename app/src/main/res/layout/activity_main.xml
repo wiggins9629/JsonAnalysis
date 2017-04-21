@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bg"
+    android:orientation="vertical">
+
+    <com.wiggins.jsonanalysis.widget.TitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal"
+                android:paddingTop="@dimen/padding_normal"
+                android:text="@string/data_format"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/tv_data_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_normal" />
+
+            <View style="@style/spaceLine" />
+
+            <TextView
+                android:id="@+id/tv_raw_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/tv_parsing_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:padding="@dimen/padding_normal"
+                android:textColor="@color/red"
+                android:textSize="@dimen/font_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_normal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_normal"
+                android:paddingRight="@dimen/padding_normal">
+
+                <Button
+                    android:id="@+id/btn_json1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height_normal"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="json_1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal" />
+
+                <Button
+                    android:id="@+id/btn_json2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height_normal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="json_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal" />
+
+                <Button
+                    android:id="@+id/btn_json3"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/btn_height_normal"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_blue_selector"
+                    android:text="json_3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
